@@ -1,87 +1,108 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ashish Salunkhe</title>
-        <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <link rel="stylesheet" href="style.css">
-
-        <!-- UIkit JS -->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+        <script src="index.js"></script>
+        <!-- <link rel="stylesheet" href="debug.css"> -->
     </head>
     <body>
-        <nav class="uk-navbar-container" uk-navbar>
-            <a class="uk-navbar-item uk-logo" href="index.html">Homepage</a>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <li><a class="uk-parent" href="about_me.html">About Me</a></li>
-                    <li><a class="uk-parent" href="experience.html">Experience</a></li>
-                    <li><a class="uk-parent" href="publication.html">Publications</a></li>
-                    <li><a class="uk-parent" href="projects.html">Projects</a></li>
-                    <li><a class="uk-parent" href="blog_posts.html">Blog Posts</a></li>
-                </ul>
+        <nav class="navbar roboto">
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item"><img class="image" src="img/home.png" alt="Homepage"></a>
+                <a role="button" class="navbar-burger"  data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu navbar-end" id="navMenu">
+                <a href="about_me.html" class="navbar-item">About Me</a>
+                <a href="experience.html" class="navbar-item">Experience</a>
+                <a href="publication.html" class="navbar-item">Publications</a>
+                <a href="projects.html" class="navbar-item">Projects</a>
+                <a href="blog_posts.html" class="navbar-item">Blog Posts</a>
             </div>
         </nav>
-        <div class="block intro">
-            <div class="intro-text">
-                <h2>Hey I'm</h2>
-                <h1>Ashish Salunkhe</h1>
-                <p>
-                    Data Science Enthusiast with special interests in NLP 
-                    and Knowledge Graphs. Also, keen in designing UIs. 
-                    Fond of reading, writing, origami and playing synthesizer
-                </p>
-                <a href="#">Download CV</a>
-            </div>
-            <img class="intro-img" src="img/profile.png" alt="portfolio image">
-            <div class="social-icons">
-                <a href="#"><img src="img/social/envelope.svg"></a>
-                <a href="#"><img src="img/social/graduation.svg"></a>
-                <a href="#"><img src="img/social/twitter.svg"></a>
-                <a href="#"><img src="img/social/github.svg"></a>
-                <a href="#"><img src="img/social/linkedin.svg"></a>
-            </div>
-        </div>
-        <div class="block updates">
-            <h1>Updates</h1>
-            <div class="update-entries">
-                <div class="entry-left">
-                    <div class="entry" id="entry-1">
-                        <h4>Mar 29, 2020</h4>
-                        <h3>Certifed Neo4j Professional</h3>
+        
+        <section class="section roboto">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h2 class="subtitle">Hey I'm</h2>
+                        <h1 class="title">Ashish Salunkhe</h1>
+                        <p class="">
+                            Data Science Enthusiast with special interests in NLP and Knowledge Graphs. 
+                            Also, keen in designing UIs. Fond of reading, writing, origami and playing synthesizer.
+                        </p>
+                        <br>
+                        <br>
+                        <a href="#" class="button">Download CV</a>
                     </div>
-                    <div class="entry" id="entry-2">
-                        <h4>Dec 01, 2019</h4>
-                        <h3>Started as off-site intern at Infralytiks LLC, IA, USA.</h3>
-                    </div>
-                    <div class="entry" id="entry-3">
-                        <h4>Sep 03, 2019</h4>
-                        <h3>Joined Crysagi Systems as Data Science Intern</h3>
-                    </div>
-                    <div class="entry" id="entry-4">
-                        <h4>Jun 12, 2019</h4>
-                        <h3>Joined CoreView Systems as Data Science Intern</h3>
-                    </div>
-                </div>
-                <div class="entry-right">
-                    <div class="entry" id="entry-5">
-                        <h4>Aug 17, 2018</h4>
-                        <h3>Elected as the Chairperson of PCCOE&R ACM Student Chapter</h3>
-                    </div>
-                    <div class="entry" id="entry-6">
-                        <h4>Jun 15, 2018</h4>
-                        <h3>Started as Machine Learning Intern at MITU Skillologies</h3>
-                    </div>
-                    <div class="entry" id="entry-7">
-                        <h4>Aug 17, 2017</h4>
-                        <h3>Founded PCCOE&R ACM Student Chapter and Elected as Chairperson</h3>
-                    </div>
-                    <div class="entry" id="entry-8">
-                        <h4>Aug 1, 2016</h4>
-                        <h3>Pursuing B.E. Computer Engineering at PCCOE&R</h3>
+                    <div class="column">
+                        <img class="image profile-pic" src="img/profile.png">
+                        <div class="social-icons is-mobile center">
+                            <a><i class="fas fa-envelope" style="color: #645dd7"></i></a>
+                            <a><i class="fas fa-graduation-cap" style="color: #4285f4"></i></a>
+                            <a><i class="fab fa-twitter" style="color: #1da1f2"></i></a>
+                            <a><i class="fab fa-github" style="color: #24292e"></i></a>
+                            <a><i class="fab fa-linkedin" style="color: #0073b0"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="hero is-primary roboto">
+            <div class="hero-head has-text-centered" style="padding: 2%;">
+                <h1 class="title">Updates</h1>
+            </div>
+            <div class="hero-body">
+                <div class="box">
+                    <div class="columns" style="padding: 2%;">
+                        <div class="column is-paddingless">
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Mar 29, 2020</button>
+                                <p>Certifed Neo4j Professional</p>
+                            </div>
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Dec 01, 2019</button>
+                                <p>Started as off-site intern at Infralytiks LLC, IA, USA.</p>
+                            </div>
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Sep 03, 2019</button>
+                                <p>Joined Crysagi Systems as Data Science Intern</p>
+                            </div>
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Jun 12, 2019</button>
+                                <p>Joined CoreView Systems as Data Science Intern</p>
+                            </div>
+                        </div>
+                        <div class="column is-paddingless">
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Aug 17, 2018</button>
+                                <p>Elected as the Chairperson of PCCOE&R ACM Student Chapter</p>
+                            </div>
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Jun 15, 2018</button>
+                                <p>Started as Machine Learning Intern at MITU Skillologies</p>
+                            </div>
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Aug 17, 2017</button>
+                                <p>Founded PCCOE&R ACM Student Chapter and Elected as Chairperson</p>
+                            </div>
+                            <div style="border-left: 1px solid #000000; padding: 10px;">
+                                <button class="button is-small is-link is-light">Aug 1, 2016</button>
+                                <p>Pursuing B.E. Computer Engineering at PCCOE&R</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

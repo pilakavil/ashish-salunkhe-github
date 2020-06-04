@@ -1,22 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-html {
+.roboto {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+.profile-pic {
+    padding: 0 20% 0 20%;
 }
-
-.uk-navbar-nav li a {
-    font-weight: 600;
-    color: #000;
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.uk-logo {
-    color: #25dbba;
-    font-weight: 600;
-}
-.uk-logo:hover {
-    color: #645dd7;
+.social-icons a{
+    padding: 10px;
+    font-size: 24px;
 }
