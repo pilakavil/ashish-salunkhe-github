@@ -24,3 +24,12 @@
 .navbar {
     background-color: #f5f5f5;
 }
+.is-green {
+    color: #25DBBA !important;
+}
+.is-purple {
+    color: #645DD7 !important;
+}
+.padd{
+    margin: 30px;
+}
