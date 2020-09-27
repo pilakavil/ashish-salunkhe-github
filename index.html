@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="animate.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+        <link rel='stylesheet' href='https://fredsiika.github.io/fredcodes/dist/css/main.css'>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script src="index.js"></script>
         
@@ -19,8 +21,8 @@
         
         <nav class="navbar is-fixed-top roboto">
             <div class="navbar-brand">
-                <a href="index.html" class="navbar-item"><img class="image" src="img/home.png" alt="Homepage"></a>
-                <a href="index.html" class="navbar-item is-active">Home</a>
+                <a href="index.html" class="navbar-item"><img class="image has-text-weight-bold" src="img/home.png" alt="Homepage"></a>
+                <!-- <a href="index.html" class="navbar-item is-active">Home</a> -->
                 <a role="button" class="navbar-burger"  data-target="navMenu" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -38,7 +40,7 @@
         
         <section class="section roboto first">
             <div class="container">
-                <div class="columns">
+                <div class="columns fade-in-left">
                     <div class="column" style="margin-top: 3rem;">
                         <h2 class="subtitle">Hey I'm</h2>
                         <h1 class="title">Ashish Salunkhe</h1>
@@ -48,17 +50,34 @@
                         </p>
                         <br>
                         <br>
-                        <a href="#" class="button shake-horizontal">Download CV</a>
+                        <a href="#" class="cv-button fade-in-left">Download CV</a>
                     </div>
                     <div class="column">
+                        <!-- <img class="image profile-pic" src="img/profile.png"> -->
+                         <div class="newsletter-section fade-in-left">
+                        <!-- <img src="\dist\ashish.jpg" class="newsletter-avatar" alt="Fred"> -->
                         <img class="image profile-pic" src="img/profile.png">
-                        <div class="social-icons is-mobile center">
-                            <a><i class="fas fa-envelope heartbeat" style="color: #645dd7"></i></a>
-                            <a><i class="fas fa-graduation-cap heartbeat" style="color: #4285f4"></i></a>
-                            <a><i class="fab fa-twitter heartbeat" style="color: #1da1f2"></i></a>
-                            <a><i class="fab fa-github heartbeat" style="color: #24292e"></i></a>
-                            <a><i class="fab fa-linkedin heartbeat" style="color: #0073b0"></i></a>
+                        <div>
+                            <h3>Full Stack Developer</h3>
+                            <p>Working on Chatbots, Computer Vision and NLP Projects </p> 
+                            <!-- <a href="www.farmerp.com" style="color: #00d1b2;">@FarmERP</a> -->
+                            <!-- <a class="button" href="https://fredsiika.substack.com">Resume</a> -->
+                            <div class="social-icons is-mobile center button-white">
+                                <a><i class="fas fa-envelope " style="color: #ffffff"></i></a>
+                                <a><i class="fas fa-graduation-cap " style="color: #ffffff"></i></a>
+                                <a><i class="fab fa-twitter " style="color: #ffffff"></i></a>
+                                <a><i class="fab fa-github " style="color: #ffffff"></i></a>
+                                <a><i class="fab fa-linkedin " style="color: #ffffff"></i></a>
+                            </div>
                         </div>
+                        </div>
+                        <!-- <div class="social-icons is-mobile center">
+                            <a><i class="fas fa-envelope " style="color: #645dd7"></i></a>
+                            <a><i class="fas fa-graduation-cap " style="color: #4285f4"></i></a>
+                            <a><i class="fab fa-twitter " style="color: #1da1f2"></i></a>
+                            <a><i class="fab fa-github " style="color: #24292e"></i></a>
+                            <a><i class="fab fa-linkedin " style="color: #0073b0"></i></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -70,8 +89,9 @@
             </div>
             <div class="hero-body">
                 <div class="box">
-                    <div class="columns" style="padding: 2%;">
-                        <div class="column is-paddingless">
+                    <div class="columns fade-in-left" style="padding: 2%; max-height: 496px; overflow-y: scroll; -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                    scrollbar-width: none;  /* Firefox */">
+                        <div class="column is-paddingless" >
                             <div style="border-left: 1px solid #000000; padding: 10px;">
                                 <button class="button is-small is-link is-light">Mar 29, 2020</button>
                                 <p>Certifed Neo4j Professional</p>

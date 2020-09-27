@@ -33,3 +33,38 @@
 .padd{
     margin: 30px;
 }
+.cv-button{
+    /* webkit-appearance: none; */
+    display: inline-block;
+    border: 1px solid #0366ee;
+    border-radius: 4px;
+    /* background: #0366ee; */
+    color: #fff;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    text-transform: none;
+    padding: 0.75rem 1.25rem;
+    margin: 0 0 0.5rem 0;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    background: radial-gradient(circle at 20% 20%, #5183f5 25%, #4640ff 100%);
+    box-shadow: 0.5rem 1.25rem 1.75rem 0 rgba(100,110,140,0.4);
+    color: rgba(255,255,255,0.9);
+}
+.cv-button:hover{
+   
+        color: white;
+     
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
